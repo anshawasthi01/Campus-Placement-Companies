@@ -1,0 +1,61 @@
+About Investwell: Investwell is a leader in the field of Enterprise Software for Financial Planners. Despite being an early mover in this industry we have grown entirely through word of mouth and our dedicated efforts to serve the needs of India's Mutual Fund industry with cutting-edge solutions since 2000. 
+You should come join us at InvestWell if you want to:
+
+●        be part of the company that will revolutionise the way millions of people invest.
+
+●        be part of the digital investment revolution.
+
+●        be part of a culture that is unique in the sense that it’s fast-paced, hard-working, and yet still leaves room to learn a lot and expand             your professional horizons.
+
+ 
+
+Roles & Responsibilities
+
+●        Write code, and ultimately deploy successful enterprise-level systems that can be leveraged for a broad set of business use cases.
+
+●        Responsible for system architecture and development for new product initiatives and feature development.
+
+●        Functionally decompose complex problems into simple, straight-forward solutions that demonstrate significant creativity and high  judgment.
+
+●        Fully and completely understand system interdependencies and limitations.
+
+●        Possess expert knowledge in performance, scalability, enterprise system architecture, and engineering best practices.
+
+●        Responsible for the over-all systems development life cycle of a key product sub-system.
+
+●        Provide metrics inputs to various reporting decks and communicate key performance indicators in support of network objectives.
+
+●        Must be an individual contributor with a high sense of ownership.
+
+   
+
+Basic Qualifications:
+         ●           Candidates must have a Bachelors/ Masters in Computer Science or Engineering or related field.
+         ●          Candidates must possess an extremely sound understanding and knowledge in the basic areas of Computer Science such as                                   Algorithms, Data Structures, Object Oriented Design, Databases (Mysql, Oracle, DB2, Cassandra)
+         ●          Be able to write Investwell quality code in an object oriented language - preferably in Javascript/Java/Python/C/C++ in a Linux                           environment.
+         ●          Excellent problem solving skills.
+         ●          Candidates must have good written and oral communication skills, be a fast learner and have the ability to adapt quickly to a fast-                            paced development environment. 
+
+
+CTC: Rs. 4.00 LPA + 1.00 Lac variable
+
+
+
+Nature of the internship: remote or work from office, will be decided as per prevailing pandemic situation. Monthly stipend during 6 months of internship/training will be Rs 10,000 per month. 
+
+
+
+Annual CTC for candidates converting to full-time role post the satisfactory completion of internship would be Rs. 4,00,000. Additionally, there will be a variable component, upto Rs 1,00,000, that will be decided based on the performance of the candidate during the internship. 
+
+
+
+In addition, candidates will be required to sign a service agreement with the organization for a minimum period of 1 year from the date of appointment (full-time employment). In case you want to leave employment within the period mentioned, you should give prior notice and shall deposit training costs invested on you before leaving the organization. The training cost is the total stipend paid during 6 months of internship.
+
+
+
+
+
+Process: Online Test || Interview (Technical & HR)
+
+
+Register Here: https://forms.gle/mik68xguMzgzm89E9
