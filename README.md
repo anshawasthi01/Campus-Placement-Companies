@@ -1,4 +1,4 @@
-# Campus-Placement-Companies
+# KIET Ghaziabad 2024 Batch Placement Record
 
 | Company Name     |    IT    |   CSIT  |   CS     |   CSE   |   MCA    |   EC    |    EN    |   ME    |   Civil  |  Total  |
 | --------         | -------- |-------- | -------- |-------- | -------- |-------- | -------- |-------- | -------- |-------- |
