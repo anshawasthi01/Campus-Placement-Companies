@@ -1,0 +1,33 @@
+Job Profile CTC:
+
+₹ 800000 - ₹ 1200000 per Annum
+
+Other Info :
+
+Job Description
+
+About Posist Technologies: 
+
+At Posist (www.posist.com) we aspire to be a one stop shop for all the restaurant tech from
+managing billing to inventory to integrations. With 200+ integrations our product is the brain of a
+restaurant. Our aim is to help restaurants be prosperous by improving the bottom-line efficiency
+and reducing complexity of running an enterprise chain
+
+Responsibilities:
+Understanding of the best coding practice.
+Excellent analytical and logical ability.
+Self-motivated, ambitious and good team player.
+Quick learner and willing to learn new technologies/tools/techniques.
+Ability to perform better in a challenging environment.
+Multitasker.
+Familiar with the web development environment.
+Ability to think and ideate new and scalable solutions for challenging problems
+
+
+Skills Required:
+Strong basic computer science knowledge.
+Good hold on Data structures and algorithms
+Strong command over Oops concept and any one of the database SQL or NoSQL.
+Understanding of architectures and system design which will help in making scalable
+solutions
+Exposure to JavaScript based framework (MEAN/ MERN Stack) is a plus
