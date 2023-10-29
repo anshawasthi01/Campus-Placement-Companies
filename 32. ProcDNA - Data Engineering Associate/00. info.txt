@@ -1,0 +1,21 @@
+Job Description
+
+Profile : Data Engineering – Associate.
+
+Salary : 5.00 LPA
+
+Process : Online Test || Technical Interview at KIET
+
+Joining : July 2024
+
+ 
+
+About Us ProcDNA is a global consulting firm focused on establishing Commercial Analytics and Technology solutions for life science firms. We work side by side with our clients, partnering to achieve their goals. Our people bring in a strong blend of design thinking, the latest technology, and a client-centric approach to creating a lasting impact. For a firm starting right at the onset of the pandemic, we had stellar growth in 2020. We grew from 2 - ~108 people and are continuing with rapid but organic growth. Each of us at ProcDNA (ProcDees) boasts about a healthy blend of learning, new opportunities, and growth, which gives a feeling of swimming in the open waters rather than confining ourselves to a single lane. We invite you to join us and be part of our growth journey.
+
+ 
+
+Why considers this role? If you are working in the healthcare/life-sciences consulting domain but not getting a 360-degree view of the industry this might be a good role for you. At ProcDNA, you will work as a client champion and work across various domains to get a holistic understanding of client needs, you will work directly with senior team members and get an accelerated learning path, which of course will ensure fast-paced personal and professional growth.
+
+What we are looking for: We are looking for a Data Engineering Associate to join our team. You are someone who is driven by technology and enjoys working on cloud-based solutions like AWS and Azure.
+
+What you’ll do: • Collaborate with various teams/regions in managing complex data warehouse and BI solutions, interact with clients to understand their queries and resolve them in timely manner. • Collaborate on the use of technical skills such as data migration, and transformation, with a focus on creating and assessing ETL components that meet rigorous standards for data quality and performance. • Manage reporting solutions like Tableau, Qlik sense or power BI. • Hands-on development - work with Data Lakes, Cloud Data Warehouses, BI, Dashboards, Design data architecture patterns and ecosystems including data stores (operational systems, data lakes, data warehouses, data marts), ingress patterns (API, streaming, ETL/ELT), and egress patterns (analytics/decision tools, BI tools). • Work on data-centric projects with a concentration on Data Quality and adherence to data standards and best practices. • Undertake tasks related to Data modeling, development, and testing for enterprise-wide data solutions.
