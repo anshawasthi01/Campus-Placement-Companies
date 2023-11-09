@@ -1,0 +1,24 @@
+import heapq
+
+def lexicographicallySmallestSequence(n, a, b):
+    # Create an adjacency list for the graph
+    graph = {i: [] for i in range(1, n + 1)}
+    for i in range(len(a)):
+        graph[a[i]].append(b[i])
+        graph[b[i]].append(a[i])
+
+    # Priority queue for lexicographically smallest order
+    pq = [1]
+    visited = set([1])
+    result = []
+
+    while pq:
+        node = heapq.heappop(pq)
+        result.append(node)
+
+        for neighbor in sorted(graph[node]):
+            if neighbor not in visited:
+                visited.add(neighbor)
+                heapq.heappush(pq, neighbor)
+
+                return result
