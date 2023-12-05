@@ -1,0 +1,35 @@
+Job Profile CTC
+
+₹ 400000 per Annum
+
+Other Info 
+
+Job Description
+
+Below is the JD for your quick reference
+
+Good knowledge on SQL and PLSQL for Postgres, MySQL
+Developing applications (coding, programming preferably in Java, JS, Angular, Node JS, Flutter, React JS, MERN, Dot Net etc)
+Debugging and testing code
+Documenting and testing new software applications
+Strong technical skills including understanding of software development principles.
+Researching, investigating and fixing a wide range of technical issues
+Collaborating with senior leaders
+Good communication skills both written and oral.
+Approaching problems and creating solutions
+Proactively learning about new technologies
+Strong understanding of object-oriented design patterns. 
+Hands- on experience for Eclipse IDE or MS Visual Studio
+Good knowledge on GitLab.
+Self-learner willing to experiment with latest features
+Strong Analytical and Problem-Solving Skills.
+Excellent teamwork and interpersonal skills.
+PFB few additional details
+
+Stipend Offered-12 k per month
+Duration of Internship-6 months starting immediately (Dec23 to Jun24). 
+Internship Location- Noida(Hybrid)
+Interview Mode (PhysicalVirtual)-Virtual
+Eligibility B.Tech (CS, CSE, IT, CSIT) with min 60% throughout academics without any active backlog
+Batch-2024 
+Required skillset Flutter, AWS, Node JS, React JS, Vue JS, C#, Mongo DB, AWS, JAVA, Dot Net. Kindly specify skillset in excel
