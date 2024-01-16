@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://s3.amazonaws.com/backup.deltax.com/SDCampus2024/KGIC_1705304952471.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeltaX MCQ test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#dialog").dialog({
+                width: 300,
+                height: 600,
+                position: {
+                    my: "right top",
+                    at: "right top",
+                    of: window
+                }
+            });
+        });
+    </script>
+    <style media="screen">
+        .instructions {
+            background-color: darkgrey;
+            font-size: 20px;
+            color: black;
+        }
+
+        #dialog {
+            z-index: 9999;
+        }
+
+        .ui-dialog-title {
+            color: red;
+        }
+
+        .ui-dialog {
+            width: 500px;
+        }
+
+        .ui-dialog-titlebar-close {
+            visibility: hidden;
+        }
+
+        header {
+            height: 90px;
+            background-color: #31b848;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid #FFF;
+        }
+
+        .ui-dialog {
+            top: 100px !important;
+        }
+
+        .videoPlayer {
+            right: 0px;
+            width: 110px;
+            padding: 5px;
+        }
+
+        .display-flex-20 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        svg.important {
+            color: orange;
+        }
+
+        svg.caution {
+            color: red;
+        }
+    </style>
+</head>
+
+<body onload="onload()">
+    <header class="fixed-top">
+        <div class="navbar display-flex p-0 m-0" style="height:90px">
+            <div class="p-0 m-0">
+                <img src="./DeltaX MCQ test_files/logo-white.png" class="pl-1" height="70">
+            </div>
+            <div class="align-items-center display-flex-20 p-0 m-0">
+                <div class="text-center">
+                    <b class="text-danger">Tab switches: <span id="tabSwitchCount">0</span></b>
+                </div>
+                <div class="p-0 m-0">
+                    <video class="videoPlayer" autoplay=""></video>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="embed" style="">
+        <iframe id="dx_iframe" src="./DeltaX MCQ test_files/viewform.html" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:calc(100vh - 100px); border:none; margin-top: 100px; padding:0; overflow:hidden;">Loading...</iframe>
+    </div>
+    
+    
+
+    <!--Tab switch alert Modal -->
+    <div class="modal fade" id="tabSwitchAlertModal" tabindex="-1" aria-labelledby="tabSwitchAlertModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tabSwitchAlertModalLabel"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-exclamation-diamond caution" viewBox="0 0 16 16">
+                            <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"></path>
+                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"></path>
+                        </svg>&nbsp;Caution!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>We noticed that you moved out of the test window. You may be penalized by the hiring team if you
+                        do so again. We recommend that you remain in the window until you submit your test</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Agree &amp;
+                        continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Permission denied Modal -->
+    <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="alertModalLabel"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-exclamation-diamond important" viewBox="0 0 16 16">
+                            <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"></path>
+                            <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"></path>
+                        </svg>&nbsp;Important</h5>
+                </div>
+                <div class="modal-body">
+                    <p>This is a proctored test so you need to provide camera access. Please allow this permission
+                        on your browswer and then hit the continue button below
+                    </p>
+                    <br>
+                    <table width="100%" style="text-align: center;">
+                        <tbody><tr class="text-secondary">
+                            <td width="50%">
+                                Typical Allow Prompt (Chrome)
+                            </td>
+                            <td>
+                                Unblock Manually (Chrome)
+                            </td>
+                        </tr>
+                        <tr style="vertical-align: top;">
+                            <td width="50%">
+                                <img src="./DeltaX MCQ test_files/camera-allow.webp" width="200" height="101">
+                            </td>
+                            <td>
+                                <img src="./DeltaX MCQ test_files/camera-block.webp" width="200" height="242">
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="allowButton" class="btn btn-success">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+        var n = Math.floor(3 * Math.random() + 1);
+        var testStartTimeUtc = new Date();
+        var testEndTimeUtc = new Date();
+        var totalDuration = 45;
+        switch (n) {
+            case 1:
+                document.getElementById("dx_iframe").setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSeu5AOPSPRGpknin4p8xBm9MlUETHffJlY0uEPDA2ZqGDsvcg/viewform?embedded=true");
+                break;
+            case 2:
+                document.getElementById("dx_iframe").setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSe30b7XymdE-B4xdPyfrpGO9qHMgfmPwObqUYmZrXFotM4Ggg/viewform?embedded=true");
+                break;
+            case 3:
+                document.getElementById("dx_iframe").setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSc4FILq13S2YuWEs3XatwLffQCp9xANW8vRNpn_yKRh_xbXYw/viewform?embedded=true");
+                break;
+            default:
+                document.getElementById("dx_iframe").setAttribute("src", "https://docs.google.com/forms/d/e/1FAIpQLSeu5AOPSPRGpknin4p8xBm9MlUETHffJlY0uEPDA2ZqGDsvcg/viewform?embedded=true")
+
+        }
+        
+        function getQueryParams(url) {
+            const paramArr = url.slice(url.indexOf('?') + 1).split('&');
+            const params = {};
+            paramArr.map(param => {
+                const [key, val] = param.split('=');
+                params[key] = decodeURIComponent(val);
+            })
+            return params;
+        }
+
+
+        function onload() {
+            var queryParams = getQueryParams(window.location.href);
+            var bypassVideo = false;
+            try {
+                bypassVideo = queryParams['KmcTkJ'] ? queryParams['KmcTkJ'] == 'true' : false;
+            }
+            catch (e) {
+                bypassVideo = false;
+            }
+            var cautionModal = new bootstrap.Modal(document.getElementById('alertModal'), { backdrop: "static", keyboard: false });
+            var tabSwitchAlertModal = new bootstrap.Modal(document.getElementById('tabSwitchAlertModal'));
+
+            var errorCallback = function (e) {
+                cautionModal.show();
+            };
+
+            var captureCamera = function () {
+                if (bypassVideo){
+                    cautionModal.hide();
+                }
+                navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then((localMediaStream) => {
+                    var video = document.querySelector('video');
+                    localMediaStream.getAudioTracks().forEach(track => track.stop());
+                    video.srcObject = localMediaStream;
+                    localMediaStream.getTracks().forEach(track => track.onended = () => {
+                        if(!bypassVideo) {
+                            cautionModal.show();
+                            captureCamera();
+                        }
+                    });
+                    cautionModal.hide();
+                }).catch((e) => {
+                    if(!bypassVideo) {
+                        errorCallback(e)
+                    }
+                });
+            }
+
+            captureCamera();
+
+            document.querySelector("#allowButton").onclick = function () {
+                captureCamera();
+            }
+
+            var tabSwitchCount = 0
+            document.addEventListener('visibilitychange', function () {
+                if (document.hidden) {
+                    tabSwitchAlertModal.show()
+                    document.querySelector("#tabSwitchCount").innerHTML = ++tabSwitchCount;
+                }
+            })
+
+
+
+        }
+    </script>
+
+
+<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable ui-resizable" aria-describedby="dialog" style="position: absolute; height: auto; width: 300px; top: 0px; left: 1049px; display: block;" aria-labelledby="ui-id-1"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">Important instructions</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="dialog" class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 0px; max-height: none; height: 550px;">
+        <ul>
+            <li>The test consists of 50 questions.</li>
+            <li class="testDuration">The test duration is 45 minutes.</li>
+            <li>Avoid refreshing the page during the test. Your responses will be lost.</li>
+            <li><b>There is no auto-submit, so please submit on time.</b></li>
+            <li>Tab switching is monitored. Avoid spending time outside the tab to ensure you are not disqualified.</li>
+            <li>Please ensure that the internet is connected before submitting the responses.</li>
+            <li>Please reach out to your placement co-ordinator for help.</li>
+            <li>ALL THE BEST! :)</li>
+        </ul>
+    </div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div></body></html>
